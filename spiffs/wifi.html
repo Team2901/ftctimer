@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tree 3 WiFi Config</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1>Tree 3 WiFi Config</h1>
+        <div class="container">
+            <div class="center">
+                <a href="/wifi.html"
+                    ><button class="active">Select Network</button></a
+                >
+                <a href="/ota.html"><button>Check for Update</button></a>
+
+                <hr />
+
+                <a href="/scan"><button>Scan Networks</button></a>
+                <a href="/ssids"><button>Show Found</button></a>
+
+                <form action="/set">
+                    <label for="ssid">SSID:</label>
+                    <input type="text" id="ssid" name="ssid" /><br />
+                    <div class="half-br"></div>
+                    <label for="password">Password:</label>
+                    <input
+                        type="text"
+                        id="password"
+                        name="password"
+                    /><br /><br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

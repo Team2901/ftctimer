@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tree 3 Firmware Update</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="ota.js"></script>
+</head>
+
+<body>
+    <h1>Tree 3 Firmware Update</h1>
+    <div class="container">
+		<div class="center">
+            <a href="/wifi.html"><button>Select Network</button></a>
+            <a href="/config.html"><button disabled class="disabled_button">Modify Patterns</button></a>
+            <a href="/ota.html"><button class="active">Check for Update</button></a>
+
+            <hr>
+
+            <h2>Update Status</h2>
+            <p><b>Current Version: </b><span id="currentVersion"></span></p>
+            <p><b>New Version: </b><span id="newVersion"></span> <span id="otadate"></span> <span id="otatime"></span></p>
+            <p><b>New Size: </b><span id="otasize"></span></p>
+
+            <button class="action_button" id="upbtn" onclick="upgradeFirmware()">Check for Update</button>
+            <div id="progress" class="hidden">
+                <p id="status"></p>
+                <div id="progressContainer">
+                    <progress id="progressBar" value="0" max="100"></progress>
+                    <p id="progressText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

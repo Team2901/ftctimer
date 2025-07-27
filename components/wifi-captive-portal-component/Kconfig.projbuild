@@ -1,0 +1,47 @@
+# wifi-captive-portal component
+#
+# Copyright (c) 2021 Jeremy Carter <jeremy@jeremycarter.ca>
+#
+# This code is released under the license terms contained in the
+# file named LICENSE, which is found in the top-level folder in
+# this project. You must agree to follow those license terms,
+# otherwise you aren't allowed to copy, distribute, or use any
+# part of this project in any way.
+
+menu "Captive Portal connection config"
+    comment " ----- WiFi Access Point Settings ----- "
+
+    config CAPTIVE_PORTAL_WIFI_AP_SSID
+        string "WiFi AP SSID"
+        default "wifi-ap-ssid"
+        help
+            Start up an access point with this SSID.
+
+    config CAPTIVE_PORTAL_WIFI_AP_PASSWORD
+        string "WiFi AP Password"
+        default "password"
+        help
+            Start up an access point with this Password.
+
+    config CAPTIVE_PORTAL_WIFI_AP_CHANNEL
+        int "WiFi AP Channel"
+        range 1 13
+        default 1
+        help
+            WiFi channel (network channel) for the example to use.
+
+    config CAPTIVE_PORTAL_MAX_AP_CONN
+        int "WiFi Maximum connections AP"
+        default 4
+        help
+            Max number of the STA connects to AP.
+
+    config CAPTIVE_PORTAL_MAX_SCAN_SSIDS
+        int "WiFi Maximum Number of SSIDS to track when scanning"
+        default 10
+        help
+            Max number of the SSIDs to remember from scanning.
+
+    comment " ----- End WiFi Access Point Settings ----- "
+
+endmenu

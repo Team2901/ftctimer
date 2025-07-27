@@ -1,0 +1,131 @@
+
+* {color: #000000; font-family: Arial, sans-serif;}
+h1 {text-align: center; font-family: 'Times New Roman', Times, serif; }
+p {text-align: center;}
+div {text-align: center;}
+body {margin-bottom: 35px;}
+
+
+button {
+    background-color: #50c878;
+    position: relative;
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #008000;
+    width: 200px;
+}
+
+.action_button {
+     /* blue button */
+     background-color: #ace5ee; 
+     border-color: #4997d0;
+     /* green button */
+     /*background-color: #aaf0d1; s
+     border-color: #008000; */
+     /* purple button */
+     /* background-color: #dcd0ff;
+     border-color: #967bb6; */ 
+     padding: 5px 10px;
+     font-weight: bold;
+     font-size: 13px;
+     border-radius: 7px;
+     margin: 0px;
+     width: auto;
+}
+
+.disabled_button {
+    background-color: #b4b4b4; 
+     border-color: #868686;
+}
+
+button.active {
+    background-color: white;
+    border-color: lightgrey;
+}
+button.active::before,
+button.active::after {
+    content: '\1F916';
+    position: absolute;
+    top: 20%;
+}
+button.active::before {
+    left: 7px;
+}
+button.active::after {
+    right: 7px;
+}
+.hidden {
+    display: none;
+}
+
+/* SEE IF CONTAINER IS NEEDED */
+.container { 
+    min-height: 80vh; /* At least 100% of the viewport height */
+    display: flex; 
+    position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+.half-br {
+    margin-top: 12px; 
+}
+
+input[type=submit] {
+    /* blue button */
+    background-color: #ace5ee; 
+    border-color: #4997d0;
+    /* green button */
+    /*background-color: #aaf0d1; 
+    border-color: #008000; */
+    /* purple button */
+    /* background-color: #dcd0ff;
+    border-color: #967bb6; */ 
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 7px;
+}
+input[type="text"] {
+    width: 170px;  
+    height: 15px;  
+}
+
+
+form label {
+    text-align: left;
+    display: block;
+    margin: 5px auto;  
+    width:  177px;
+    font-weight: bold;
+}
+
+/* Trouble Choose file Button */
+input[type="file"]::file-selector-button {
+    /* blue button */
+    background-color: #ace5ee; 
+    border-color: #4997d0;
+    /* green button */
+    /*background-color: #aaf0d1; 
+    border-color: #008000; */
+    /* purple button */
+    /* background-color: #dcd0ff;
+    border-color: #967bb6; */ 
+    padding: 3px 8px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 7px;
+    color: #000000; font-family: Arial, sans-serif; font-weight: bold;
+}
+
+input[type="file"] {
+    margin-left: 77px;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "tree3",
+  "version": "1.2.0",
+  "description": "Tree 3 code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toebes/tree3.git"
+  },
+  "keywords": [
+    "tree"
+  ],
+  "author": "MyOtherMind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toebes/tree3/issues"
+  },
+  "homepage": "https://github.com/toebes/tree3#readme",
+  "devDependencies": {
+    "ftp-deploy": "^2.4.7"
+  }
+}

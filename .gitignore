@@ -1,0 +1,6 @@
+build/*
+node_modules/*
+sdkconfig.old
+Compile_crash.txt
+.ftpdeploy.js
+.vscode/*
